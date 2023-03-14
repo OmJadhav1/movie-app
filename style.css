@@ -5,10 +5,15 @@
 
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 ::selection{
     color: greenyellow;
+}
+
+a{
+    color: inherit;
 }
 
 body{
@@ -120,6 +125,46 @@ main{
     overflow-y: auto;
 }
 
+/* .movie:has(.movie-info:hover) .overview{
+    transform: translateY(0);
+} */
+
 .movie:hover .overview{
     transform: translateY(0);
 }
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: var(--secondary-color);
+    color: #eee;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: var(--primary-color);
+    border:2px solid var(--secondary-color) ;
+  }
+
+  #next{
+    background-color: var(--secondary-color);
+    color: #eee;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 15px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
